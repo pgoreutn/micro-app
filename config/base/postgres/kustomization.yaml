@@ -1,0 +1,21 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  app.kubernetes.io/name: postgres
+  app.kubernetes.io/instance: postgres-abcxzy
+  app.kubernetes.io/component: database
+
+resources:
+  - statefulset.yaml
+  - service.yaml
+  - service-headless.yaml
+
+vars:
+  - name: DATABASE_ENDPOINT
+    objref:
+      kind: Service
+      name: postgres
+      apiVersion: v1
+    fieldref:
+      fieldpath: metadata.name

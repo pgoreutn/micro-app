@@ -1,0 +1,60 @@
+### Eclipse ###
+.project
+.classpath
+.settings/
+bin/
+
+### IntelliJ IDEA ###
+.idea
+*.ipr
+*.iml
+*.iws
+out/
+local.properties
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
+.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Vim
+*.swp
+*.swo
+
+### patch ###
+*.orig
+*.rej
+
+### Gradle ###
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+*.hprof
+
+### Docker ###
+.testcontainers-tmp-*
+
+### appclt ###
+.appctlconfig
+.deployment/
+
+### Project ###
+favicon.*
+*.mv.db
+*.trace.db
+libs/demo/src/main/jenkinsfile/ssh
+TODO
